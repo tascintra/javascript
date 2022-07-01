@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            /* background-color: rgb(42, 139, 42); */
+            background-image: linear-gradient(to bottom, rgb(42, 139, 42), rgba(64, 163, 64, 0.945));
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: default;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> -->
+    <div id="area">
+        Interaja...
+    </div>
+
+    <script>
+        var areajs = window.document.getElementById('area') // escopo incorreto
+
+        // chamando eventos dentro do js
+        areajs.addEventListener('click', clicar)
+        areajs.addEventListener('mouseenter', entrar)
+        areajs.addEventListener('mouseout', sair)
+
+        function clicar() {
+            // var areajs = window.document.getElementById('area')
+            areajs.innerText = 'Clicou!'
+            areajs.style.background = 'red'
+        }
+
+        function entrar() {
+            areajs.innerText = 'Entrou!'
+        }
+
+        function sair() {
+            areajs.innerText = 'Saiu!'
+            areajs.style.background = 'green'
+        }
+    </script>
+</body>
+</html>
