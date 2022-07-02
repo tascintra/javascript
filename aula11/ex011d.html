@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Brasileiro</title>
+    <style>
+        body {
+            font: normal 1.3em Arial;
+        }
+
+        input {
+            font: normal 1.3em Arial;
+        }
+
+        input#txtpais {
+            width: 390px
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Teste se brasileiro</h1>
+    <p>Escreva abaixo em qual país você nasceu:</p>
+    <p><input type="text" name="txtpais" id="txtpais"> <input type="button" value="OK" onclick="testarpais()"></p>
+
+    <div id="resteste">
+
+    </div>
+
+    <script>
+        function testarpais() {
+            var txtp = document.querySelector('input#txtpais').value
+            var resteste = document.querySelector('div#resteste')
+            if (txtp.toLowerCase() == 'brasil') {
+                resteste.innerHTML = "<p>Você é <strong>Brasileiro<sup>&#x1F1E7;&#x1F1F7;</sup></strong>.</p>"
+            } else {
+                resteste.innerHTML = `<p>Você é <strong>Estrangeiro</strong>.</p>`
+            }
+        }
+    </script>
+</body>
+</html>
