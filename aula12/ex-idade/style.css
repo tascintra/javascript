@@ -22,6 +22,10 @@ div {
     padding: 5px;
 }
 
+#txtano, #botao {
+    font: normal 1.1em Arial;
+}
+
 footer {
     font-style: italic;
 }
