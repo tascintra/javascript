@@ -4,7 +4,7 @@ function verificar() {
     var fAno = document.querySelector('input#txtano')
     var res = document.getElementById('res')
     
-    if (fAno.value.length == 0 || Number(fAno.value) > ano) {
+    if (fAno.value.length == 0 || fAno.value == 0 || fAno.value < 1900 || Number(fAno.value) > ano) {
         window.alert('[ERRO] Verifique os dados e tente novamente!')
     } else {
         var rSex = document.getElementsByName('radsex')
@@ -17,7 +17,7 @@ function verificar() {
 
 
         if (rSex[0].checked) {
-            if (idade >= 0 && idade <= 10) {
+            if (idade >= 0 && idade <= 12) {
                 // CRIANÇA
                 genero = 'criança'
                 img.setAttribute('src', 'foto-bebe-m.png')
@@ -36,7 +36,7 @@ function verificar() {
             }
 
         } else {
-            if (idade >= 0 && idade <= 10) {
+            if (idade >= 0 && idade <= 12) {
                 // CRIANÇA
                 img.setAttribute('src', 'foto-bebe-f.png')
                 genero = 'criança'
