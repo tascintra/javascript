@@ -18,6 +18,14 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.349);
 }
 
+input {
+    font: normal 1em Arial;
+}
+
+input#txtn {
+    width: 150px;
+}
+
 footer {
     font-style: italic;
 }
