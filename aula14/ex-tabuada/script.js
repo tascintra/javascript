@@ -16,7 +16,6 @@ function tabuada() {
         let n = Number(num.value)
         let c = 1
 
-        tab.setAttribute('id', 'seltab')
         tab.setAttribute('size', '10')
         tab.style.overflow = ('hidden')
         tab.style.font = ('normal 18px Arial')
@@ -34,7 +33,6 @@ function tabuada() {
         let c = 1
 
         div.appendChild(tab)
-        tab.setAttribute('id', 'seltab')
         tab.setAttribute('size', '10')
         tab.style.overflow = ('hidden')
         tab.style.font = ('normal 18px Arial')
