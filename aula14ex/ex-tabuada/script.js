@@ -41,7 +41,7 @@ function tabuada() {
 
 
         while (c <= 10) {
-            let item  = document.createElement('option')  // cria elemento dentro do select do HTML
+            let item = document.createElement('option')  // cria elemento dentro do select do HTML
             item.text = `${n} x ${c} = ${n*c}`
             item.value = `tab${c}` // saber qual item foi selecionado (não faz muito sentido para js somente para outras linguagens)
             tab.appendChild(item)
