@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body {
+    font-family: sans-serif;
+}
+
+input {
+    width: 100px;
+    height: 70px;
+}
