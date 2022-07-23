@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor R$ -> US$</title>
+</head>
+<body onload="cotacao()">
+    <h1>Conversor R$ &#x27A1; US$</h1>
+    <p>
+        <input type="button" value="Converter" onclick="converter()">
+    </p>
+    <div id="convertido">
+        Clique no botão acima para iniciar.
+    </div>
+    
+    <script>
+        var iCot = window.prompt('Antes de mais nada. Quanto está a cotação do dólar hoje?')
+
+        function converter() {
+            let iReais = window.prompt('Quantos R$ você tem na carteira?')
+            let reais = Number(iReais.toString().replace(",", "."))
+            let cotacao = Number(iCot.toString().replace(",", "."))
+
+            let dolar  = reais * cotacao
+
+            let convertido = window.document.getElementById('convertido')
+
+            convertido.innerHTML = `<p>Com <strong>${reais.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})}</strong> que você tem na carteira é possível comprar <strong>${dolar.toLocaleString('en-US', {style:'currency', currency:'USD'})}</strong> dólares.</p>`
+            convertido.innerHTML += `<p>A cotação do dólar hoje é <strong>${cotacao.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})}</strong>.</p>`
+        }
+    </script>
+</body>
+</html>
