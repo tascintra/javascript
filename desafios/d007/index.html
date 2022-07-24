@@ -24,7 +24,7 @@
             let reais = Number(iReais.toString().replace(",", "."))
             let cotacao = Number(iCot.toString().replace(",", "."))
 
-            let dolar  = reais * cotacao
+            let dolar  = reais / cotacao
 
             let convertido = window.document.getElementById('convertido')
 

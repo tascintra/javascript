@@ -1,5 +1,5 @@
 function converter() {
-    let iTemp = window.prompt('Digite uma distância em metros (m)')
+    let iTemp = window.prompt('Digite uma temperatura em °C (Celsius)')
     let celsius = Number(iTemp.toString().replace(",", "."))
     let kelvin  = celsius + 273.15
     let fahren  = (celsius * 1.8) + 32
