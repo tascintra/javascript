@@ -11,5 +11,5 @@ function desconto() {
     let rDesconto = window.document.getElementById('rDesconto')
 
     rDesconto.innerHTML = `<h2>Calculando desconto de 10% para ${produto}</h2>`
-    rDesconto.innerHTML += `<p>O preço original era ${cPreco.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})}.</p> <p>Você acaba de ganhar ${desconto.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})} de desconto (-10%).</p> <p>No fim, você vai pagar ${fPreco.toLocaleString('pt-BR', {style:'currency',currency:'BRL'})} no produto ${produto}.</p>`
+    rDesconto.innerHTML += `<p>O preço original era ${cPreco.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})}.</p> <p>Você acaba de ganhar ${desconto.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})} de desconto (-10%).</p> <p>No fim, você vai pagar ${fPreco.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})} no produto ${produto}.</p>`
 }

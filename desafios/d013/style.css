@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+body {
+    font-family: sans-serif;
+    font-size: 1.2em;
+}
+
+input {
+    width: 210px;
+    height: 70px;
+    font-size: 1em;
+}
+
+mark {
+    padding: 1px;
+}
+
+mark#reprovado {
+    background-color: lightcoral;
+    color: darkred;
+}
+
+mark#recuperacao {
+    background-color: lightgoldenrodyellow;
+    color: darkgoldenrod;
+}
+
+mark#aprovado {
+    background-color: lightgreen;
+    color: darkgreen;
+}

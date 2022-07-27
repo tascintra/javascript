@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+    font-family: sans-serif;
+}
+
+input {
+    width: 100px;
+    height: 60px;
+    font-size: 0.9em;
+}
+
+mark#bissexto {
+    background-color: lightgreen;
+    color: green;
+    padding: 2px;
+}
+
+mark#naobissexto {
+    background-color: lightcoral;
+    color: darkred;
+    padding: 2px;
+}
